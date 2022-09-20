@@ -84,7 +84,7 @@ class HRPINN(PINNSolver):
 
 
 # Load Data
-with open('../heating rod/full_data_Q.pkl', 'rb') as file:
+with open('full_data_Q.pkl', 'rb') as file:
     t, x, Qh, Temp, rho, cp, heff, keff, Ts, A, As, nt, L_seg, L, seg, T_melt, pi, d = load(file)
     file.close()
 Temp = np.array(Temp)
